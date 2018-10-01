@@ -1,0 +1,26 @@
+{
+  "name": "@sweatshop/steem-price-feed",
+  "version": "1.0.0",
+  "description": "STEEM/SBD price feed for Steem Witnesses",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "10.x.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thesweatshop/steem-price-feed.git"
+  },
+  "author": "Paulius Uza <pauliusuza@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thesweatshop/steem-price-feed/issues"
+  },
+  "homepage": "https://github.com/thesweatshop/steem-price-feed#readme",
+  "dependencies": {
+    "@sweatshop/dsteem-fallback": "^1.0.1",
+    "axios": "^0.18.0",
+    "dotenv-safe": "^6.0.0"
+  }
+}

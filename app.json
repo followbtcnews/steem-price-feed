@@ -1,0 +1,54 @@
+{
+  "name": "Steem Witness Price Feed",
+  "description": "STEEM/SBD price feed for Steem Witnesses",
+  "keywords": [
+    "steem",
+    "steemit",
+    "witness",
+    "price",
+    "sbd"
+  ],
+  "website": "https://steemit.com/@sweatshop",
+  "repository": "https://github.com/thesweatshop/steem-price-feed",
+  "logo": "https://steemitimages.com/u/sweatshop/avatar",
+  "env": {
+    "WITNESS_NAME": {
+      "description": "Witness account name (without @ sign)",
+      "value": "witness_account_name"
+    },
+    "WITNESS_ACTIVE_KEY": {
+      "description": "Witness private active key",
+      "value": "0000000000000000000000000000000000000000000000000"
+    },
+    "RPC_NODES": {
+      "description": "List of RPC nodes to use (comma separated)",
+      "value": "https://api.steemit.com, https://steemd.privex.io",
+      "required": false
+    },
+    "EXCHANGES": {
+      "description": "List of exchanges to use (comma separated)",
+      "value": "bittrex, poloniex, binance, upbit",
+      "required": false
+    },
+    "SBD_PEG_MULTIPLIER": {
+      "description": "SBD peg multiplier",
+      "value": "1",
+      "required": false
+    },
+    "INTERVAL_MINUTES": {
+      "description": "Feed publishing interval in minutes",
+      "value": "60",
+      "required": false
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 0,
+      "size": "hobby"
+    },
+    "worker": {
+      "quantity": 1,
+      "size": "hobby"
+    }
+  }
+}
